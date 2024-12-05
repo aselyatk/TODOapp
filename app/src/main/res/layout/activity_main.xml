@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="30sp"
+        >
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#009688"
+            android:padding="12dp"
+            android:drawableLeft="@drawable/todoicon"
+            android:text="ToDoApp"
+            android:textColor="@color/white"
+            android:textSize="29sp" />
+
+        <LinearLayout
+            android:layout_below="@id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Заголовок задачи"
+                android:textSize="30sp"
+                android:padding="20dp"/>
+
+            <EditText
+                android:id="@+id/eHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Сделать уборку"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Описание задачи"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:padding="20dp"/>
+
+            <EditText
+                android:id="@+id/eDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Пропылесосить, помыть полы"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:backgroundTint="#00C2A0"
+                android:text="Добавить задачу"
+                android:textSize="25sp"
+                app:cornerRadius="21dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#00C2A0"
+                android:onClick="moveToList"
+                android:text="Посмотреть список"
+                android:textSize="25sp"
+                app:cornerRadius="21dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
